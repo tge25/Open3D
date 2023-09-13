@@ -54,4 +54,4 @@ fi
 
 echo "apt-get install ${deps[*]}"
 $SUDO apt-get -y update
-$SUDO apt-get -y install ${APT_CONFIRM} ${deps[*]}
+$SUDO DEBIAN_FRONTEND=noninteractive apt-get -y install ${APT_CONFIRM} ${deps[*]}
